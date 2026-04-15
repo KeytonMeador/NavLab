@@ -23,7 +23,7 @@ struct DashboardView: View {
                         .foregroundColor(.gray)
                     
                     NavigationLink("Pick Your Movie") {
-                        MoviePickerView(mood: selectedMovie)
+                        MoviePickerView(movie: selectedMovie)
                     }
                     .buttonStyle(.borderedProminent)
                     
