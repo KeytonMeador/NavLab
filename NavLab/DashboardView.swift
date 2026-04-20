@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DashboardView: View {
-    @State private var selectedMovie: movie = .bolt
+    @State private var selectedMovie: Movie = .bolt
     var body: some View {
         TabView {
             NavigationStack{
@@ -23,7 +23,7 @@ struct DashboardView: View {
                         .foregroundColor(.gray)
                     
                     NavigationLink("Pick Your Movie") {
-                        MoviePickerView(movie: selectedMovie)
+                        MoviePickerView(movie: $selectedMovie)
                     }
                     .buttonStyle(.borderedProminent)
                     
